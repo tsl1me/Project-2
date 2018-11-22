@@ -1,5 +1,5 @@
 import Local
-import system
+import os
 
 while(True):
 	tops = list()
@@ -52,4 +52,4 @@ while(True):
 		break
 
 print(Local.COUNT_OF_WAYS % (start, end) + " " + str(TREE_wheight[end]))
-system(pause)
+os.system('PAUSE')
