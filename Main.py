@@ -20,6 +20,9 @@ while(True):
 	if str_to_parse == end_case:
 		break
 	key, descendant = map(str, str_to_parse.split(": "))
+	if descendant not in TREE:
+		print(Local.THIS_TOP_DOESNT_EXISTS)
+		continue
 	TREE[key].append(descendant)
 
 
